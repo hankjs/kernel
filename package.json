@@ -1,14 +1,15 @@
 {
   "name": "@wm/kernel",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "types": "./index.d.ts",
   "scripts": {
     "start": "electron ./e2e/server/electron.js",
     "test": "playwright test",
-    "build": "tsc"
+    "build": "tsc",
+    "release": "standard-version"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +19,7 @@
     "electron": "^22.2.0",
     "node-addon-api": "^5.1.0",
     "playwright": "^1.30.0",
+    "standard-version": "^9.5.0",
     "typescript": "^4.9.3"
   }
 }
