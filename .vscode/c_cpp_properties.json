@@ -5,7 +5,8 @@
             "includePath": [
                 "${default}",
                 "${workspaceFolder}/node_modules/node-addon-api/**",
-                "${workspaceFolder}/../../vendor/node-v14.21.2/include/node/**",
+                "${workspaceFolder}/vendor/node-v14.21.2/include/node/**",
+                "${workspaceFolder}/src/include/**",
                 "${workspaceFolder}/src/platform/**",
                 "${workspaceFolder}/src/platform/windows/**",
                 "${workspaceFolder}/src/robotjs/**",
