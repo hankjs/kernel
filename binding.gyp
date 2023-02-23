@@ -8,10 +8,12 @@
       'include_dirs': [
         "<!(node -p \"require('node-addon-api').include_dir\")",
         "src",
+        "src/include",
         "src/platform",
         "src/platform/windows",
         "src/robotjs",
-        "src/robotjs/windows"
+        "src/robotjs/windows",
+        "src/hook"
       ],
       "sources": [ "src/kerneljs.cc"],
       "conditions": [
@@ -22,6 +24,7 @@
                 "src/platform/windows/processInfo.cc",
                 "src/robotjs/windows/keycode.cc",
                 "src/robotjs/windows/keypress.cc",
+                "src/hook/HookKeyboard.cpp",
             ],
             "libraries": ["Kernel32.lib", "User32.lib"],
             "msvs_settings": {

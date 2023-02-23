@@ -4,9 +4,7 @@
 #include "keypress.h"
 #include "microsleep.h"
 
-#define JSError(env, str)                                        \
-    Napi::TypeError::New(env, str).ThrowAsJavaScriptException(); \
-    return Napi::Number::New(env, 0)
+#include "console.h"
 
 // Global delays.
 int mouseDelay = 10;

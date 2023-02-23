@@ -10,7 +10,7 @@ interface KernelJSBridge extends Kernel {
     getKeys(): Promise<Keys>;
 }
 
-const kernelJSBridge: KernelJSBridge = {
+const kernelJSBridge = {
     async keyTap(key: string, modifier: string | string[]) {
         return await ipcRenderer.invoke(k("keyTap"), key, modifier);
     },
@@ -39,7 +39,7 @@ const kernelJSBridge: KernelJSBridge = {
     async typeStringDelayed(string: string, cpm: number): Promise<number> {
         return await ipcRenderer.invoke(k("typeStringDelayed"), string, cpm);
     },
-};
+} as KernelJSBridge;
 contextBridge.exposeInMainWorld("electronBridge", {
     kernel: kernelJSBridge,
 });

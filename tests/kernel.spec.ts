@@ -6,5 +6,5 @@ test.describe("Kernel", () => {
     test("getCurrentProcessId", () => {
         const id = addon.kernel.getCurrentProcessId();
         expect(typeof id).toBe("number");
-    })
+    });
 });

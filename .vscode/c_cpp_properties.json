@@ -10,7 +10,8 @@
                 "${workspaceFolder}/src/platform/**",
                 "${workspaceFolder}/src/platform/windows/**",
                 "${workspaceFolder}/src/robotjs/**",
-                "${workspaceFolder}/src/robotjs/windows/**"
+                "${workspaceFolder}/src/robotjs/windows/**",
+                "${workspaceFolder}/src/hook/**"
             ],
             "defines": [
                 "IS_WINDOWS"
